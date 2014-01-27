@@ -8,6 +8,7 @@ This project is an example of what is required to make a project deployable usin
 
 ## Config file
 The config file must return a PHP array containing the configuration. The config options are:
+
 | Config Key | Description | Default Value |
 | ---------- | ----------- | ------------- |
 | clone_dir  | This is the directory in your docker container where your repo will be cloned | /var/www |
