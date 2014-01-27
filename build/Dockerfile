@@ -7,7 +7,6 @@ RUN /root/docker/scripts/epel.sh
 RUN /root/docker/scripts/remi.sh
 RUN /root/docker/scripts/os.sh
 RUN /root/docker/scripts/php54.sh
-RUN /root/docker/scripts/git-repo.sh CURRENT_REPO
 
 # Open SSH and Apache ports
 EXPOSE  80 22
