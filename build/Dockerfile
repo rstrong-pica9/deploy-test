@@ -2,7 +2,6 @@
 FROM centos:6.4
 
 ADD files /root/docker
-RUN ls -l /root/docker
 RUN /root/docker/scripts/epel.sh
 RUN /root/docker/scripts/remi.sh
 RUN /root/docker/scripts/os.sh
