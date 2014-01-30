@@ -1,0 +1,4 @@
+addons:
+    redis:
+        name: redis-cache
+        env_name: redis

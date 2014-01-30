@@ -1,0 +1,12 @@
+{
+    "name": "rstrong-pica9/deploy-test",
+    "require": {
+        "predis/predis": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "Rob Strong",
+            "email": "rstrong@pica9.com"
+        }
+    ]
+}
