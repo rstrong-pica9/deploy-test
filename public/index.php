@@ -21,7 +21,7 @@ try {
 
 $pdo->query("INSERT INTO access_log (created_at) VALUES ('" . date('r') . "')");
 ?>
-Deployment Works!<br>
+<br>Deployment Works!</b><br>
 IP: <?= $_SERVER['SERVER_ADDR'] ?><br>
 <br>
 Redis: <?= getenv('REDIS_PORT_6379_TCP') ?><br>
