@@ -2,3 +2,6 @@ addons:
     redis:
         name: redis-cache
         env_name: redis
+    postgres:
+        name: pgsql-test
+        env_name: db
