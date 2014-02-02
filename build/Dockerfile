@@ -11,4 +11,4 @@ RUN /root/docker/scripts/php54.sh
 EXPOSE  80 22
 
 # supervisord is the entrypoint so that it can start Apache and SSH
-CMD ["/usr/bin/supervisord"]
+CMD env | grep _ >> /etc/environment && /usr/bin/supervisord
