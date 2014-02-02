@@ -28,8 +28,8 @@ Redis: <?= getenv('REDIS_PORT_6379_TCP') ?><br>
 Redis Test: true = <?= $client->get('foo'); ?><br>
 <br>
 PostgreSQL Test:<br>
-&nbsp;&nbsp;Access Log Entries<br>
-<?php $sth = $pdo->query('SELECT * FROM access_log');
+&nbsp;&nbsp;Last 5 Access Log Entries<br>
+<?php $sth = $pdo->query('SELECT * FROM access_log ORDER BY id DESC LIMIT 5');
 $sth->setFetchMode(PDO::FETCH_ASSOC);
 foreach ($sth->fetchAll() as $row) { ?>
     &nbsp;&nbsp;<?= $row['created_at']; ?><br>
